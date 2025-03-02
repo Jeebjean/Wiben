@@ -66,7 +66,9 @@
 }
 
 .contact-one__input-box input[type="text"],
-.contact-one__input-box input[type="email"] {
+.contact-one__input-box input[type="email"],
+.contact-one__input-box input[type="tel"],
+.contact-one__input-box input[type="date"] {
     height: 60px;
     width: 100%;
     border: none;
@@ -230,7 +232,9 @@
 }
 
 .contact-page__input-box input[type="text"],
-.contact-page__input-box input[type="email"] {
+.contact-page__input-box input[type="email"],
+.contact-page__input-box input[type="tel"],
+.contact-page__input-box input[type="date"] {
     height: 50px;
     width: 100%;
     padding-left: 30px;
@@ -285,6 +289,7 @@
     font-size: 16px;
     color: var(--chioary-white);
     padding: 21px 20px 23px;
+    margin-top: 50px;
     font-family: var(--chioary-font-two);
     background-color: var(--chioary-black);
     z-index: 2;

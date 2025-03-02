@@ -145,12 +145,14 @@
     z-index: 9;
 }
 
-.nice-select .list:hover .option:not(:hover) {
+/* .nice-select .list:hover .option:not(:hover) {
     background-color: transparent !important;
-}
+} */
 
 .nice-select .option {
+    text-transform: none;
     color: #ffffff;
+    background-color: #002f6c;
     font-weight: 400;
     line-height: 40px;
     list-style: none;
@@ -164,11 +166,19 @@
     transition: all 0.2s;
 }
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
-    color: #ffffff;
-    background-color: var(--anity-black);
+    color: #FFA415;
+    background-color: #310116
 }
 
 .nice-select .option.selected {
@@ -176,7 +186,7 @@
 }
 
 .nice-select .option.disabled {
-    background-color: transparent;
+    /* background-color: transparent; */
     color: #999;
     cursor: default;
 }
